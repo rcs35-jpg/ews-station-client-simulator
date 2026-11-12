@@ -23,6 +23,7 @@ def client(clientId):
 	id = clientId
 	time = ""
 	level = ""
+	# endereço do servidor que recebe as leituras (IP de rede local)
 	url2 = 'http://10.30.41.115:8080/reading'
 
 
@@ -53,6 +54,7 @@ def client(clientId):
 
 		#assign time and random water level
 		time=datetime.datetime.now().isoformat()
+		# gera um nível de água aleatório entre 10 e 49
 		level=random.randrange(10,50)
 		
 		#set values to be displayed
